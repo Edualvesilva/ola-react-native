@@ -34,7 +34,12 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: { backgroundColor: "lightblue", flex: 1 },
+  container: {
+    backgroundColor: "lightblue",
+    flex: 1,
+    /* justifyContent: "center",
+    flexDirection: "row", */ // padrão é column
+  },
   head: { backgroundColor: "gray" },
   content: { backgroundColor: "white" },
   footer: { backgroundColor: "brown" },
