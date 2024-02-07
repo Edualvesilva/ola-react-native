@@ -7,6 +7,8 @@ import {
   Alert,
 } from "react-native";
 
+import { StyleSheet } from "react-native";
+
 export default function App() {
   const vai = () => {
     Alert.alert("Titulo da janela", "Fala parça!");
@@ -14,19 +16,26 @@ export default function App() {
   return (
     <>
       <StatusBar barStyle="light-content" />
-      <SafeAreaView>
-        <View>
-          <Text>Topo</Text>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.head}>
+          <Text>head</Text>
         </View>
 
-        <View>
-          <Text>Conteudo..</Text>
+        <View style={styles.content}>
+          <Text>Content..</Text>
         </View>
-        <View>
-          <Text>Rodape</Text>
+        <View style={styles.footer}>
+          <Text>Footer</Text>
           <Button title="Toca Aqui!" onPress={vai} />
         </View>
       </SafeAreaView>
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  container: { backgroundColor: "lightblue", flex: 1 },
+  head: { backgroundColor: "gray" },
+  content: { backgroundColor: "white" },
+  footer: { backgroundColor: "brown" },
+});
