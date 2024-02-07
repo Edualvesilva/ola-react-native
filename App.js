@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     /* justifyContent: "center",
     flexDirection: "row", */ // padrão é column
   },
-  head: { backgroundColor: "gray" },
-  content: { backgroundColor: "white" },
-  footer: { backgroundColor: "brown" },
+  head: { backgroundColor: "gray", flex: 0.8 },
+  content: { backgroundColor: "white", flex: 4 },
+  footer: { backgroundColor: "brown", flex: 0.7 },
 });
